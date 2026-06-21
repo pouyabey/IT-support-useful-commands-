@@ -166,11 +166,112 @@ If the result is `False`, the issue may be related to:
 - Blocked port
 - The remote computer being turned off
 - The remote computer not listening on that port
+---
+
+---
+
+![Active Directory](https://img.shields.io/badge/Active%20Directory-Commands-2563EB?style=for-the-badge&logo=windows&logoColor=white)
+![Domain](https://img.shields.io/badge/Domain-Troubleshooting-0EA5E9?style=flat-square)
+![Users Groups OUs](https://img.shields.io/badge/Users%20%7C%20Groups%20%7C%20OUs-22C55E?style=flat-square)
+![Admin Required](https://img.shields.io/badge/Admin-Required-EF4444?style=flat-square)
+
+## 🏢 Active Directory Commands
+
+Use these commands for **domain troubleshooting**, **user lookup**, **group lookup**, **Group Policy updates**, and basic Active Directory support tasks.
+
+> Note: Some Active Directory commands require **domain permissions**, **RSAT tools**, or the **Active Directory PowerShell module**.
+
+| Command | Action |
+|---|---|
+| `whoami` | (cmd) Shows the currently logged-in user. Useful for confirming whether the user is logged in with a local or domain account. |
+| `whoami /user` | (cmd) Shows the current user's username and SID. Useful for account identification and troubleshooting permissions. |
+| `whoami /groups` | (cmd) Shows the security groups the current user belongs to. Useful for checking access and permissions. |
+| `echo %USERDOMAIN%` | (cmd) Shows the domain or computer name associated with the current user session. |
+| `echo %USERNAME%` | (cmd) Shows the currently logged-in username. |
+| `systeminfo \| findstr /B /C:"Domain"` | (cmd) Shows whether the computer is joined to a domain or workgroup. |
+| `gpupdate /force` | (cmd) Forces a Group Policy update. Useful after policy changes or when troubleshooting domain policy issues. |
+| `gpresult /r` | (cmd) Shows applied Group Policy information for the current user and computer. |
+| `gpresult /h report.html` | (cmd) Generates an HTML Group Policy report. Useful for reviewing applied policies in a readable format. |
+| `nltest /dsgetdc:domainname.local` | (cmd) Finds a domain controller for the specified domain. Replace `domainname.local` with the real domain name. |
+| `nltest /sc_verify:domainname.local` | (cmd) Verifies the secure channel between the computer and the domain. Useful for domain trust issues. |
+| `net user /domain` | (cmd) Lists domain users. Requires connection to the domain. |
+| `net user username /domain` | (cmd) Shows information about a specific domain user. Replace `username` with the real username. |
+| `net group /domain` | (cmd) Lists domain groups. |
+| `net group "Group Name" /domain` | (cmd) Shows members of a specific domain group. Replace `Group Name` with the real group name. |
+| `net accounts /domain` | (cmd) Shows domain password policy information, such as password age and lockout policy. |
+| `dsquery user -name username` | (cmd / RSAT) Searches for an Active Directory user by name. Requires RSAT / AD tools. |
+| `dsquery computer -name computername` | (cmd / RSAT) Searches for a computer object in Active Directory. Requires RSAT / AD tools. |
+| `dsquery group -name "Group Name"` | (cmd / RSAT) Searches for an Active Directory group. Requires RSAT / AD tools. |
+| `Get-ADUser username` | (PowerShell) Gets information about an AD user. Requires the Active Directory PowerShell module. |
+| `Get-ADUser username -Properties *` | (PowerShell) Shows detailed properties for an AD user. Useful for checking account status, email, department, and other attributes. |
+| `Get-ADGroupMember "Group Name"` | (PowerShell) Shows members of an Active Directory group. |
+| `Get-ADComputer computername` | (PowerShell) Gets information about an Active Directory computer object. |
+| `Search-ADAccount -LockedOut` | (PowerShell) Shows locked-out Active Directory accounts. Requires proper permissions. |
+| `Unlock-ADAccount -Identity username` | (PowerShell) Unlocks a locked Active Directory user account. Requires proper permissions. |
+| `Set-ADAccountPassword username -Reset` | (PowerShell) Resets an Active Directory user password. Requires proper permissions. |
+
+### Example: Check Current User and Groups
+
+```cmd
+whoami
+whoami /groups
+```
+
+(cmd) These commands help confirm the logged-in user and the groups assigned to that user.
+
+### Example: Force Group Policy Update
+
+```cmd
+gpupdate /force
+```
+
+(cmd) This forces the computer to refresh Group Policy settings from the domain.
+
+### Example: Generate Group Policy Report
+
+```cmd
+gpresult /h report.html
+```
+
+(cmd) This creates an HTML report showing applied Group Policy settings.
+
+### Example: Check Domain User Information
+
+```cmd
+net user username /domain
+```
+
+(cmd) Replace `username` with the real domain username.
+
+### Example: Find Locked-Out Users with PowerShell
+
+```powershell
+Search-ADAccount -LockedOut
+```
+
+(PowerShell) This shows locked-out Active Directory accounts.
+
+### Example: Unlock a Domain User Account
+
+```powershell
+Unlock-ADAccount -Identity username
+```
+
+(PowerShell) Replace `username` with the real domain username.
+
+---
+
+
+
+
+
+---
 
 ![User Account Management](https://img.shields.io/badge/User%20Account%20Management-EF4444?style=for-the-badge&logo=windows11&logoColor=white)
 ![Local Users](https://img.shields.io/badge/Local-Users-F87171?style=flat-square)
 ![Account Tasks](https://img.shields.io/badge/Account-Tasks-DC2626?style=flat-square)
 ![Admin Required](https://img.shields.io/badge/Admin-Required-991B1B?style=flat-square)
+
 
 ## 👤 User Account Management
 
