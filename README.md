@@ -213,10 +213,10 @@ Use these commands when troubleshooting **printers**, **default printer settings
 | `devmgmt.msc` | Opens **Device Manager**. Useful for checking printer drivers, USB devices, and unknown devices. |
 | `appwiz.cpl` | Opens **Programs and Features**. Useful for uninstalling printer software or old printer utilities. |
 | `rundll32 printui.dll,PrintUIEntry /s` | Opens **Print Server Properties**. Useful for removing old printer drivers and managing printer driver packages. |
-| `net stop spooler` | Stops the **Print Spooler** service. Useful when print jobs are stuck in the queue. Run as Administrator. |
+| `net stop spooler` | (Windows +R) Stops the **Print Spooler** service. Useful when print jobs are stuck in the queue. Run as Administrator. |
 | `net start spooler` | Starts the **Print Spooler** service again after stopping it. Run as Administrator. |
 | `sc query spooler` | Checks the current status of the **Print Spooler** service. |
-| `wmic printer list brief` | Lists installed printers with basic information. Useful for quickly checking printer names and status. |
+| `wmic printer list brief` | (Windows +R) Lists installed printers with basic information. Useful for quickly checking printer names and status. |
 | `Get-Printer` | PowerShell command that lists installed printers on the computer. |
 | `Get-PrintJob` | PowerShell command that shows current print jobs in the printer queue. |
 | `Remove-PrintJob` | PowerShell command used to remove stuck print jobs from the printer queue. |
