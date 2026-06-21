@@ -317,7 +317,6 @@ More commands and troubleshooting notes will be added over time.
 Planned future sections:
 
 - **Active Directory commands**
-- **PowerShell basics**
 - **Microsoft 365 admin commands**
 - **Windows security commands**
 - **Printer troubleshooting commands**
