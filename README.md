@@ -176,6 +176,11 @@ If the result is `False`, the issue may be related to:
 - The remote computer being turned off
 - The remote computer not listening on that port
 
+![User Account Management](https://img.shields.io/badge/User%20Account%20Management-EF4444?style=for-the-badge&logo=windows11&logoColor=white)
+![Local Users](https://img.shields.io/badge/Local-Users-F87171?style=flat-square)
+![Account Tasks](https://img.shields.io/badge/Account-Tasks-DC2626?style=flat-square)
+![Admin Required](https://img.shields.io/badge/Admin-Required-991B1B?style=flat-square)
+
 ## 👤 User Account Management
 
 Use these commands when creating, deleting, or managing local Windows users.
@@ -187,16 +192,10 @@ Use these commands when creating, deleting, or managing local Windows users.
 
 ### Example
 
- This creates a local user named `john` with the password `P@ssword123`.
- 
+This creates a local user named `john` with the password `P@ssword123`.
+
 ```cmd
 net user john P@ssword123 /add
-```
-
-
-![Printers](https://img.shields.io/badge/Printers%20%26%20Devices-EAB308?style=for-the-badge&logo=printables&logoColor=black)
-![Printer Support](https://img.shields.io/badge/Printer-Support-FDE047?style=flat-square)
-![Devices](https://img.shields.io/badge/Devices-Troubleshooting-FACC15?style=flat-square)
 
 ## 🖨️ Printers & Devices
 
