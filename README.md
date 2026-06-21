@@ -18,6 +18,7 @@ This repository is a growing command reference for **IT Support**, **Help Desk**
 - [🖥️ System Administration & Diagnostics](#️-system-administration--diagnostics)
 - [🖧 Remote Desktop & Remote Access](#-remote-desktop--remote-access)
 - [🔵 PowerShell Commands](#-powershell-commands)
+- [🏢 Active Directory Commands](#-active-directory-commands)
 - [👤 User Account Management](#-user-account-management)
 - [🖨️ Printers & Devices](#️-printers--devices)
 - [🚀 Professional Power User Shortcuts](#-professional-power-user-shortcuts)
