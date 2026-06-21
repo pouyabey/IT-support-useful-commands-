@@ -351,7 +351,6 @@ Planned future sections:
 - **Active Directory commands**
 - **Microsoft 365 admin commands**
 - **Windows security commands**
-- **Printer troubleshooting commands**
 - **Disk and storage commands**
 - **Remote support commands**
 - **Useful Linux commands for IT support**
