@@ -17,12 +17,12 @@ This repository is a growing command reference for **IT Support**, **Help Desk**
 - [🌐 Network Troubleshooting](#-network-troubleshooting)
 - [🖥️ System Administration & Diagnostics](#️-system-administration--diagnostics)
 - [🖧 Remote Desktop & Remote Access](#-remote-desktop--remote-access)
+- [🔵 PowerShell Commands](#-powershell-commands)
 - [👤 User Account Management](#-user-account-management)
 - [🖨️ Printers & Devices](#️-printers--devices)
 - [🚀 Professional Power User Shortcuts](#-professional-power-user-shortcuts)
 - [🧰 Common Run Commands](#-common-run-commands)
 - [⚠️ Notes](#️-notes)
-
 ---
 
 ![System Performance](https://img.shields.io/badge/System%20Performance%20%26%20Maintenance-0EA5E9?style=for-the-badge&logo=windows&logoColor=white)
