@@ -112,33 +112,50 @@ Use these commands when troubleshooting **RDP**, remote access, or advanced star
 ![Firewall](https://img.shields.io/badge/Firewall-Rules-EF4444?style=flat-square)
 ![Admin Required](https://img.shields.io/badge/Admin-Required-DC2626?style=flat-square)
 
-## 🔵 PowerShell Remote Desktop Troubleshooting
+---
 
-Use these PowerShell commands when troubleshooting **Remote Desktop**, **RDP firewall rules**, or **port 3389 connectivity**.
+---
 
-> Note: Some of these commands must be run in **PowerShell as Administrator**.
+![PowerShell](https://img.shields.io/badge/PowerShell-Commands-2563EB?style=for-the-badge&logo=powershell&logoColor=white)
+![Windows Admin](https://img.shields.io/badge/Windows-Administration-0EA5E9?style=flat-square)
+![Network Tests](https://img.shields.io/badge/Network-Testing-22C55E?style=flat-square)
+![Admin Required](https://img.shields.io/badge/Admin-Required-EF4444?style=flat-square)
+
+## 🔵 PowerShell Commands
+
+Use these PowerShell commands for **Windows administration**, **network testing**, **firewall troubleshooting**, and support tasks.
+
+> Note: Some PowerShell commands must be run as **Administrator**.
 
 | PowerShell Command | Action |
 |---|---|
-| `Enable-NetFirewallRule -DisplayGroup "Remote Desktop"` | Enables Windows Firewall rules for **Remote Desktop**. Useful when RDP is enabled but the firewall is blocking the connection. |
+| `Enable-NetFirewallRule -DisplayGroup "Remote Desktop"` | Enables Windows Firewall rules for the **Remote Desktop** group. Useful when Remote Desktop is enabled but Windows Firewall is blocking the connection. |
 | `Get-NetFirewallRule -DisplayGroup "Remote Desktop"` | Shows the current firewall rules for the **Remote Desktop** group. Useful for checking whether RDP firewall rules are enabled or disabled. |
-| `Test-NetConnection 192.168.100.10 -Port 3389` | Tests whether the client can reach the remote computer on **RDP port 3389**. Useful for checking if Remote Desktop traffic is allowed through the firewall or network. |
+| `Test-NetConnection 192.168.100.10 -Port 3389` | Tests whether the local computer can reach a remote computer on **port 3389**. Useful for checking port connectivity and firewall/network issues. |
 
-### Example: Enable RDP Firewall Rules
+### Example: Enable a Firewall Rule Group
 
 ```powershell
 Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
 ```
 
-This enables the firewall rules required for **Remote Desktop** connections.
+This enables the Windows Firewall rules for the selected display group.
 
-### Example: Test RDP Port Connectivity
+### Example: Check Firewall Rules
+
+```powershell
+Get-NetFirewallRule -DisplayGroup "Remote Desktop"
+```
+
+This shows the firewall rules related to the selected display group and helps confirm whether they are enabled or disabled.
+
+### Example: Test Port Connectivity
 
 ```powershell
 Test-NetConnection 192.168.100.10 -Port 3389
 ```
 
-This checks whether the remote computer at `192.168.100.10` is reachable on **port 3389**, which is the default port for **Remote Desktop Protocol (RDP)**.
+This checks whether the remote computer at `192.168.100.10` is reachable on port `3389`.
 
 ### What to Look For
 
@@ -148,17 +165,16 @@ When using `Test-NetConnection`, check this result:
 TcpTestSucceeded : True
 ```
 
-If the result is `True`, the RDP port is reachable.
+If the result is `True`, the port is reachable.
 
 If the result is `False`, the issue may be related to:
 
 - Windows Firewall
-- RDP not being enabled
 - Wrong IP address
 - Network connectivity issue
-- Port 3389 being blocked
+- Blocked port
 - The remote computer being turned off
-- The remote computer not listening on port 3389
+- The remote computer not listening on that port
 
 ## 👤 User Account Management
 
