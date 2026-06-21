@@ -107,33 +107,6 @@ Use these commands when troubleshooting **RDP**, remote access, or advanced star
 ![Account Tasks](https://img.shields.io/badge/Account-Tasks-DC2626?style=flat-square)
 ![Admin Required](https://img.shields.io/badge/Admin-Required-991B1B?style=flat-square)
 
-## 👤 User Account Management
-
-Use these commands when creating, deleting, or managing local Windows users.
-
-| Command | Action |
-|---|---|
-| `net user testuser password /add` | Creates a new local user named `testuser` with the password `password`. Replace the username and password with your own values. |
-| `net user testuser /delete` | Deletes the local user account named `testuser`. Use carefully because this removes the account from the computer. |
-
-### Example
-
-This creates a local user named `john` with the password `P@ssword123`.
-
-```cmd
-net user john P@ssword123 /add
-```
-
-
-
-
-
-
-
----
-
-
----
 
 ---
 
