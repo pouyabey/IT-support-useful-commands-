@@ -196,8 +196,8 @@ This creates a local user named `john` with the password `P@ssword123`.
 
 ```cmd
 net user john P@ssword123 /add
-‍‍‍```
----
+
+```
 
 ## 🖨️ Printers & Devices
 
