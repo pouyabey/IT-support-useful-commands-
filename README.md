@@ -17,12 +17,14 @@ This repository is a growing command reference for **IT Support**, **Help Desk**
 - [🌐 Network Troubleshooting](#-network-troubleshooting)
 - [🖥️ System Administration & Diagnostics](#️-system-administration--diagnostics)
 - [🖧 Remote Desktop & Remote Access](#-remote-desktop--remote-access)
-- [👤 User Account Management](#-user-account-management)
 - [🔵 PowerShell Commands](#-powershell-commands)
+- [👤 User Account Management](#-user-account-management)
 - [🖨️ Printers & Devices](#️-printers--devices)
 - [🚀 Professional Power User Shortcuts](#-professional-power-user-shortcuts)
 - [🧰 Common Run Commands](#-common-run-commands)
 - [⚠️ Notes](#️-notes)
+
+---
 
 ---
 
