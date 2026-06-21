@@ -131,10 +131,6 @@ net user john P@ssword123 /add
 
 ---
 
-![PowerShell RDP](https://img.shields.io/badge/PowerShell-Remote%20Desktop%20Troubleshooting-2563EB?style=for-the-badge&logo=powershell&logoColor=white)
-![RDP Port](https://img.shields.io/badge/RDP-Port%203389-F97316?style=flat-square)
-![Firewall](https://img.shields.io/badge/Firewall-Rules-EF4444?style=flat-square)
-![Admin Required](https://img.shields.io/badge/Admin-Required-DC2626?style=flat-square)
 
 ---
 
