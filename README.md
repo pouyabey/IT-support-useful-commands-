@@ -199,6 +199,7 @@ net user john P@ssword123 /add
 
 ```
 
+
 ## 🖨️ Printers & Devices
 
 Use these commands when troubleshooting **printers**, **default printer settings**, or connected devices.
