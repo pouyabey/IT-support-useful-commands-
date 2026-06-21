@@ -101,7 +101,26 @@ Use these commands when troubleshooting **RDP**, remote access, or advanced star
 | `shutdown /r /o /f /t 0` | Restarts the computer immediately and opens **Advanced Startup Options**. Useful for recovery, Safe Mode, Startup Repair, and troubleshooting boot issues. |
 
 ---
+![User Account Management](https://img.shields.io/badge/User%20Account%20Management-EF4444?style=for-the-badge&logo=windows11&logoColor=white)
+![Local Users](https://img.shields.io/badge/Local-Users-F87171?style=flat-square)
+![Account Tasks](https://img.shields.io/badge/Account-Tasks-DC2626?style=flat-square)
+![Admin Required](https://img.shields.io/badge/Admin-Required-991B1B?style=flat-square)
 
+## 👤 User Account Management
+
+Use these commands when creating, deleting, or managing local Windows users.
+
+| Command | Action |
+|---|---|
+| `net user testuser password /add` | Creates a new local user named `testuser` with the password `password`. Replace the username and password with your own values. |
+| `net user testuser /delete` | Deletes the local user account named `testuser`. Use carefully because this removes the account from the computer. |
+
+### Example
+
+This creates a local user named `john` with the password `P@ssword123`.
+
+```cmd
+net user john P@ssword123 /add
 ![User Account Management](https://img.shields.io/badge/User%20Account%20Management-EF4444?style=for-the-badge&logo=windows11&logoColor=white)
 
 
