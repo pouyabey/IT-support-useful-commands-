@@ -127,7 +127,6 @@ net user john P@ssword123 /add
 
 
 
-![User Account Management](https://img.shields.io/badge/User%20Account%20Management-EF4444?style=for-the-badge&logo=windows11&logoColor=white)
 
 
 ---
