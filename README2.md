@@ -117,3 +117,139 @@ Use these commands when creating, deleting, or managing local Windows users.
 
 ```cmd
 net user john P@ssword123 /add
+
+```
+
+![Printers](https://img.shields.io/badge/Printers%20%26%20Devices-EAB308?style=for-the-badge&logo=printables&logoColor=black)
+![Printer Support](https://img.shields.io/badge/Printer-Support-FDE047?style=flat-square)
+![Devices](https://img.shields.io/badge/Devices-Troubleshooting-FACC15?style=flat-square)
+
+## 🖨️ Printers & Devices
+
+Use these commands when troubleshooting **printers**, **default printer settings**, or connected devices.
+
+| Command | Action |
+|---|---|
+| `control printers` | Opens **Devices and Printers**. Useful for checking installed printers, setting the default printer, removing old printers, and troubleshooting print issues. |
+
+---
+
+![Shortcuts](https://img.shields.io/badge/Professional%20Power%20User%20Shortcuts-64748B?style=for-the-badge&logo=windows&logoColor=white)
+![Keyboard](https://img.shields.io/badge/Keyboard-Shortcuts-94A3B8?style=flat-square)
+![Fast Access](https://img.shields.io/badge/Fast-Access-475569?style=flat-square)
+
+## 🚀 Professional Power User Shortcuts
+
+Useful Windows keyboard shortcuts for faster **IT support**, **navigation**, and **troubleshooting** work.
+
+| Shortcut | Action |
+|---|---|
+| `Win + X` | Opens the **Power User Menu**. Provides quick access to Admin Terminal, Device Manager, Disk Management, Network Connections, and more. |
+| `Ctrl + Shift + Esc` | Opens **Task Manager** directly. |
+| `Win + L` | Locks the workstation immediately. |
+| `Win + Shift + S` | Opens the Windows snipping tool for screenshots. |
+| `Win + R` | Opens the **Run** dialog box. You can type many commands from this reference here. |
+
+---
+
+![Common Run Commands](https://img.shields.io/badge/Common%20Run%20Commands-06B6D4?style=for-the-badge&logo=gnometerminal&logoColor=white)
+![Run Dialog](https://img.shields.io/badge/Win%20%2B%20R-Run%20Dialog-0891B2?style=flat-square)
+![Quick Access](https://img.shields.io/badge/Quick-Access-67E8F9?style=flat-square&logoColor=black)
+
+## 🧰 Common Run Commands
+
+These commands are commonly opened by pressing `Win + R`, then typing the command.
+
+| Run Command | Action |
+|---|---|
+| `control printers` | Opens **Devices and Printers**. |
+| `ncpa.cpl` | Opens **Network Connections**. |
+| `mstsc` | Opens **Remote Desktop Connection**. |
+| `SystemPropertiesRemote` | Opens **Remote Desktop / Remote Access** settings. |
+| `services.msc` | Opens **Windows Services**. |
+| `firewall.cpl` | Opens **Windows Defender Firewall** settings. |
+| `eventvwr.msc` | Opens **Event Viewer**. |
+| `devmgmt.msc` | Opens **Device Manager**. |
+| `diskmgmt.msc` | Opens **Disk Management**. |
+| `msinfo32` | Opens **System Information**. |
+| `dxdiag` | Opens **DirectX Diagnostic Tool**. |
+| `taskmgr` | Opens **Task Manager**. |
+| `resmon` | Opens **Resource Monitor**. |
+| `cleanmgr` | Opens **Disk Cleanup**. |
+
+---
+
+![Notes](https://img.shields.io/badge/Important%20Notes-FACC15?style=for-the-badge&logo=readme&logoColor=black)
+![Admin Required](https://img.shields.io/badge/Admin-Required-EF4444?style=flat-square)
+![Use Carefully](https://img.shields.io/badge/Use-Carefully-F97316?style=flat-square)
+![Production Warning](https://img.shields.io/badge/Production-PC%20Warning-DC2626?style=flat-square)
+
+## ⚠️ Notes
+
+Some commands must be run as **Administrator**.
+
+For example:
+
+```cmd
+sfc /scannow
+DISM /Online /Cleanup-Image /RestoreHealth
+chkdsk /f /r
+gpupdate /force
+netsh winsock reset
+net user username password /add
+net user username /delete
+shutdown /r /o /f /t 0
+```
+
+Always make sure you understand the command before running it on a production computer.
+
+---
+
+![Repository Goal](https://img.shields.io/badge/Repository-Goal-22C55E?style=for-the-badge&logo=github&logoColor=white)
+![Learning Project](https://img.shields.io/badge/Learning-Project-16A34A?style=flat-square)
+![IT Portfolio](https://img.shields.io/badge/IT-Portfolio-15803D?style=flat-square)
+
+## ✅ Repository Goal
+
+The goal of this repository is to build a practical and easy-to-use command reference for:
+
+- **IT Support Technicians**
+- **Help Desk Analysts**
+- **Desktop Support Technicians**
+- **Entry-Level System Administrators**
+- **Students preparing for IT support roles**
+
+More commands and troubleshooting notes will be added over time.
+
+---
+
+![Future Additions](https://img.shields.io/badge/Future-Additions-A855F7?style=for-the-badge&logo=readme&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-Basics-7C3AED?style=flat-square)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-Commands-9333EA?style=flat-square)
+![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-Admin-6D28D9?style=flat-square)
+
+## 📚 Future Additions
+
+Planned future sections:
+
+- **Active Directory commands**
+- **PowerShell basics**
+- **Microsoft 365 admin commands**
+- **Windows security commands**
+- **Printer troubleshooting commands**
+- **Disk and storage commands**
+- **Remote support commands**
+- **Useful Linux commands for IT support**
+- **Useful macOS commands for IT support**
+
+---
+
+![Updates](https://img.shields.io/badge/Contribution%20%2F%20Updates-0EA5E9?style=for-the-badge&logo=github&logoColor=white)
+![Growing Reference](https://img.shields.io/badge/Growing-Reference-0284C7?style=flat-square)
+![Documentation](https://img.shields.io/badge/Documentation-Practice-0369A1?style=flat-square)
+
+## ⭐ Contribution / Updates
+
+This is a personal learning and documentation project.
+
+I will continue updating this reference as I practice more **IT Support**, **Windows troubleshooting**, and **system administration** tasks.
