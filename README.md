@@ -200,6 +200,12 @@ net user john P@ssword123 /add
 ```
 
 
+---
+
+![Printers](https://img.shields.io/badge/Printers%20%26%20Devices-EAB308?style=for-the-badge&logo=printables&logoColor=black)
+![Printer Support](https://img.shields.io/badge/Printer-Support-FDE047?style=flat-square)
+![Devices](https://img.shields.io/badge/Devices-Troubleshooting-FACC15?style=flat-square)
+
 ## 🖨️ Printers & Devices
 
 Use these commands when troubleshooting **printers**, **default printer settings**, or connected devices.
