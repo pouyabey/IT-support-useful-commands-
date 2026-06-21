@@ -101,12 +101,6 @@ Use these commands when troubleshooting **RDP**, remote access, or advanced star
 | `SystemPropertiesRemote` | Opens **Remote System Properties**. Used to enable Remote Desktop and check remote access settings. |
 | `shutdown /r /o /f /t 0` | Restarts the computer immediately and opens **Advanced Startup Options**. Useful for recovery, Safe Mode, Startup Repair, and troubleshooting boot issues. |
 
----
-![User Account Management](https://img.shields.io/badge/User%20Account%20Management-EF4444?style=for-the-badge&logo=windows11&logoColor=white)
-![Local Users](https://img.shields.io/badge/Local-Users-F87171?style=flat-square)
-![Account Tasks](https://img.shields.io/badge/Account-Tasks-DC2626?style=flat-square)
-![Admin Required](https://img.shields.io/badge/Admin-Required-991B1B?style=flat-square)
-
 
 ---
 
