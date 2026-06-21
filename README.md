@@ -348,7 +348,6 @@ More commands and troubleshooting notes will be added over time.
 
 Planned future sections:
 
-- **Active Directory commands**
 - **Microsoft 365 admin commands**
 - **Windows security commands**
 - **Disk and storage commands**
