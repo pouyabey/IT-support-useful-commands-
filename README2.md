@@ -115,10 +115,12 @@ Use these commands when creating, deleting, or managing local Windows users.
 
 ### Example
 
+ This creates a local user named `john` with the password `P@ssword123`.
+ 
 ```cmd
 net user john P@ssword123 /add
 ```
-This creates a local user named `john` with the password `P@ssword123`.
+
 
 ![Printers](https://img.shields.io/badge/Printers%20%26%20Devices-EAB308?style=for-the-badge&logo=printables&logoColor=black)
 ![Printer Support](https://img.shields.io/badge/Printer-Support-FDE047?style=flat-square)
