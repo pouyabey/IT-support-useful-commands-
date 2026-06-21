@@ -190,21 +190,63 @@ net user john P@ssword123 /add
 ```
 
 
+
+
+
 ---
-
-
 
 ![Printers](https://img.shields.io/badge/Printers%20%26%20Devices-EAB308?style=for-the-badge&logo=printables&logoColor=black)
 ![Printer Support](https://img.shields.io/badge/Printer-Support-FDE047?style=flat-square)
-![Devices](https://img.shields.io/badge/Devices-Troubleshooting-FACC15?style=flat-square)
+![Print Spooler](https://img.shields.io/badge/Print%20Spooler-Service-F97316?style=flat-square)
+![Drivers](https://img.shields.io/badge/Printer-Drivers-22C55E?style=flat-square)
+![PowerShell](https://img.shields.io/badge/PowerShell-Printer%20Commands-2563EB?style=flat-square&logo=powershell&logoColor=white)
 
 ## 🖨️ Printers & Devices
 
-Use these commands when troubleshooting **printers**, **default printer settings**, or connected devices.
+Use these commands when troubleshooting **printers**, **default printer settings**, **print queue issues**, or connected devices.
 
 | Command | Action |
 |---|---|
 | `control printers` | Opens **Devices and Printers**. Useful for checking installed printers, setting the default printer, removing old printers, and troubleshooting print issues. |
+| `printmanagement.msc` | Opens **Print Management**. Useful for managing printers, drivers, print servers, and printer queues. |
+| `services.msc` | Opens **Windows Services**. Useful for checking or restarting the **Print Spooler** service. |
+| `devmgmt.msc` | Opens **Device Manager**. Useful for checking printer drivers, USB devices, and unknown devices. |
+| `appwiz.cpl` | Opens **Programs and Features**. Useful for uninstalling printer software or old printer utilities. |
+| `rundll32 printui.dll,PrintUIEntry /s` | Opens **Print Server Properties**. Useful for removing old printer drivers and managing printer driver packages. |
+| `net stop spooler` | Stops the **Print Spooler** service. Useful when print jobs are stuck in the queue. Run as Administrator. |
+| `net start spooler` | Starts the **Print Spooler** service again after stopping it. Run as Administrator. |
+| `sc query spooler` | Checks the current status of the **Print Spooler** service. |
+| `wmic printer list brief` | Lists installed printers with basic information. Useful for quickly checking printer names and status. |
+| `Get-Printer` | PowerShell command that lists installed printers on the computer. |
+| `Get-PrintJob` | PowerShell command that shows current print jobs in the printer queue. |
+| `Remove-PrintJob` | PowerShell command used to remove stuck print jobs from the printer queue. |
+
+### Example: Restart Print Spooler
+
+```cmd
+net stop spooler
+net start spooler
+```
+
+This restarts the **Print Spooler** service. It is useful when print jobs are stuck or the printer queue is not responding.
+
+### Example: Open Print Server Properties
+
+```cmd
+rundll32 printui.dll,PrintUIEntry /s
+```
+
+This opens **Print Server Properties**, where you can manage or remove old printer drivers.
+
+### Example: List Printers with PowerShell
+
+```powershell
+Get-Printer
+```
+
+This shows the printers installed on the computer.
+
+---
 
 ---
 
